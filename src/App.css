@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar{
+  background:white;
+  color: black;
+  font-size: 20px;
+  height: 125vh;
+  padding-bottom: 10rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-section{
+  display:flex;
+  align-items:flex-end;
+  justify-content: space-between; 
+  padding: 15px 10px; 
+  margin-bottom: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo{
+  font-size: 18px;
+  line-height: 0;
+  justify-content: space-between;
+  margin-top: 0;
+  
+}
+.link{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: black;
+  gap: 10px;
+  margin-bottom: 3rem;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+}
+a{
+  text-decoration: none;
+}
+.link:hover{
+  transition: 0.2s ease-in-out;
+  background:blue;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.active{
+  transition: 0.2s ease-in-out;
+  background:blue;
+  color: white;
+  align-items: center;
+  padding: 18px;
+  
+  
+}
+.main-container{
+  background:gainsboro;
+  display: flex;
+}
+.bars{
+  color:darkgrey
+}
+.bars:hover{
+  cursor: pointer;
+}
+.he{
+  margin-right: 5px;
+}
+.child{
+  padding: 20px;
+}
+main{
+  width: 100%;
+  padding: 0;
+}
+link:active{
+  color: white;
+}
+.cards{
+  display: flex;
+}
+.accordion{
+  height: 3rem;
+  width: 237px;
+  margin-top: 253px;
+  margin-left: -20px;
+  border: 1px solid black;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  .image {
+    border-radius: 25px;
+    margin-left: -8px;
+    width: 30%;
+    margin-right: auto;
+    margin-right: 144px;
+    /* margin-block-start: auto; */
+    margin-top: -6px;
+
+}
+.card-2{
+  background: grey;
+    width: 12rem;
+    height: 59px;
+    margin-top: 13.8rem;
+
+}
+.body{
+  margin-top: 10px;
+}
+.link-1{
+
+  color: black;
+  gap: 10px;
+  margin-bottom: 3rem;
+  padding: 5px 10px;
+  border-right: ma;
+  margin-top: 15rem;
+
+}
+.Dr{
+  font-size: 12px;
+  margin-left: 48px;
+  margin-top: -28px;
+}
+.link_text-1{
+  margin-right: 10px;
+}
+.i{
+  margin-left: 4px;
+  width: 112px;
+  
+}
+.profession{
+  font-size: 9px;
+    margin-left: 48px;
+    margin-top: -9px;
 }

@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import { useEffect,useState } from 'react';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import './App.css';
+import Grid from './Components/Grid';
+import Payment from './Components/Payment';
+import Sidebar from './Components/Sidebar';
+import PatientList from './Pages/PatientList';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App=()=> {
+  const[data,setData]=useState(null);
+  async function getDetails(){
+    const response= await fetch("https://619f39821ac52a0017ba467e.mockapi.io/DoctorDetails")
+    const datas= await response.json();
+    setData(datas[0]);
+    console.log(data);
+  }
+  useEffect(()=>{
+    getDetails();
+  },[]);
+
+  
+ 
+    return (
+    <>
+
+    <Router>
+      <Sidebar name={data && data.name} specification={data && data.specification}>
+      <Routes>
+      <Route path='/home' exact />
+        <Route path='/overview' exact />
+        <Route path='/calendar' exact />
+        <Route path='/patientlist' exact element={<PatientList/>}/>
+        <Route path='/messages' exact />
+        <Route path='/payment' exact />
+        <Route path='/settings' exact />
+      </Routes>
+     
+      </Sidebar>
+     
+    </Router>
+    </>
   );
 }
 

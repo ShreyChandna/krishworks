@@ -1,0 +1,75 @@
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin-right: 5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 25px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.d-flex {
+    display: flex!important;
+    margin-right: 1rem;
+}
+.plus{
+    margin-top: 1.8px;
+    color: blue;
+    font-size: 2rem;
+}
+.noti{
+    align-items: center;
+   color: gray;
+    font-size: 2.4rem;
+    margin-left: 10px;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    HEIGHT: 4rem;
+    top: 0;
+    z-index: 1020;
+    box-shadow: 1px 0px 1px grey;
+}
+.arrow {
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
+        margin-right: 50.5rem;
+        color: darkgray;
+    }
+    .button2{
+        color: darkgray;
+    margin-top: 1.8px;
+    background: white;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    line-height: 1px;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+
+    }
+    .button3{
+        border-radius: 5px;
+        margin-top: 1.8px;
+        font-size: 1.2rem;
+        line-height: 1px;
+        margin-right: 10px;
+        height: 30px;
+        width: 9rem;
+        border: 1px solid darkgray;
+        background: white;
+        color: dimgrey;
+        
+    }
+   .name{
+    margin-left: 153px;
+    margin-top: -34px;
+   }

@@ -1,0 +1,26 @@
+.card2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-left: 5px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+    margin-top: 20px;
+    height: 43vh;
+    width: 35rem;
+}
+.flex{
+    display: flex;
+}
+.container{
+    margin-bottom: 5%;
+}
+.col-sm{
+    box-shadow: 0px 0.2px darkgrey;
+}
+h6{
+    color: darkgray;
+}

@@ -1,0 +1,27 @@
+.card-files {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-left: 20px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0.25rem;
+    margin-top: 20px;
+    height: 49vh;
+    width: 22rem;
+}
+.card-header{
+    border: none;
+    background: white;
+}
+
+.a2{
+    margin-left: 6.8rem;
+}
+.add{
+    padding-right: 1px;
+    font-size: 20px;
+}
